@@ -4,17 +4,11 @@ import Image from "next/image";
 import { prisma } from "@/lib/prisma";
 import Header from "@/components/layout/home/header";
 import ProjectBanner from "@/components/layout/home/banner/project-banner";
-import ProjectFeed from "@/components/layout/home/project-feed";
-import ProjectPoster from "@/components/layout/home/project-poster";
+import ProjectFeed from "@/components/layout/home/feed/project-feed";
+import ProjectPoster from "@/components/layout/home/poster/project-poster";
 import Footer from "@/components/layout/home/footer";
 
-export default async function Home() {
-  const data = await prisma.project.findMany({
-    orderBy: {
-      createdAt: "desc",
-    },
-  });
-
+export default function Home() {
   return (
     <main className="grid gap-y-[25px]">
       <Header />

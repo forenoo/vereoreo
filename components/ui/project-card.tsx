@@ -14,7 +14,7 @@ export default function ProjectCard(props: ProjectCardProps) {
   return (
     <div className="p-1 grid gap-[5px]">
       <Card className="border-muted/30 rounded-[8px] hover:cursor-pointer">
-        <CardContent className="flex items-center justify-center p-5 rounded-[8px] bg-[#131516]">
+        <CardContent className="flex items-center justify-center p-[5%] rounded-[8px] bg-[#131516]">
           <Image
             src={image}
             width={300}

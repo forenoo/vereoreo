@@ -1,4 +1,5 @@
 import React from "react";
+import FeedCarousel from "./carousel";
 
 export default function ProjectFeed() {
   return (
@@ -8,6 +9,7 @@ export default function ProjectFeed() {
           feed design
         </p>
       </header>
+      <FeedCarousel />
     </section>
   );
 }

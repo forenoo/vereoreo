@@ -1,4 +1,5 @@
-import React from "react";
+import PosterCarousel from "./carousel";
+import BannerCarousel from "./carousel";
 
 export default function ProjectPoster() {
   return (
@@ -8,6 +9,7 @@ export default function ProjectPoster() {
           poster
         </p>
       </header>
+      <PosterCarousel />
     </section>
   );
 }

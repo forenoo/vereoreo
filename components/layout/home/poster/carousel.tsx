@@ -8,9 +8,11 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import ProjectCard from "@/components/ui/project-card";
-import { bannerHomeData } from "@/lib/projectHomeData";
+import { formatDateToYear } from "@/lib/utils";
+import { Project } from "@/common/types/project";
+import { posterHomeData } from "@/lib/projectHomeData";
 
-export default function BannerCarousel() {
+export default function PosterCarousel() {
   return (
     <Carousel
       plugins={[
@@ -27,7 +29,7 @@ export default function BannerCarousel() {
       className="w-full max-w-full overflow-hidden"
     >
       <CarouselContent>
-        {bannerHomeData.slice(0, 8).map((project) => (
+        {posterHomeData.slice(0, 8).map((project) => (
           <CarouselItem
             key={project.id}
             className="md:basis-1/2 lg:basis-1/3 2xl:basis-1/4"

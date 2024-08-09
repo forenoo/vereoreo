@@ -1,9 +1,9 @@
 import UpFade from "@/components/animation/upfade";
 import React from "react";
 
-export default function Header() {
+export default function HomeHeader() {
   return (
-    <header className="grid gap-y-[20px]">
+    <header className="grid gap-y-[10px] lg:gap-y-[20px]">
       <UpFade>
         <span className="text-muted/70 font-medium text-[14px] lg:text-[20px]">
           Hello there, Welcome!

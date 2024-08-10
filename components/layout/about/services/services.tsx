@@ -10,9 +10,11 @@ export default function Services() {
       <header className="grid gap-y-[5px]">
         <div className="flex gap-[10px] items-center">
           <Image src={ServiceLogo} alt="service-logo" width={24} height={24} />
-          <p className="capitalize text-[20px] font-semibold">services</p>
+          <p className="capitalize text-[18px] md:text-[20px] font-semibold">
+            services
+          </p>
         </div>
-        <p className="text-[16px] text-muted font-medium">
+        <p className="text-[14px] md:text-[16px] text-muted font-medium">
           I can deliver the following services
         </p>
       </header>

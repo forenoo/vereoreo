@@ -40,10 +40,23 @@ const carouselData = [
 
 export default function ServiceCarousel() {
   return (
-    <Marquee pauseOnHover>
-      {carouselData.map((data, i) => (
-        <CarouselCard icon={data.icon} name={data.name} key={i} />
-      ))}
-    </Marquee>
+    <>
+      <Marquee className="!hidden md:!flex" pauseOnHover>
+        {carouselData.map((data, i) => (
+          <CarouselCard icon={data.icon} name={data.name} key={i} />
+        ))}
+        ``
+      </Marquee>
+      <Marquee className="!flex md:!hidden" direction="left" pauseOnHover>
+        {carouselData.slice(0, 3).map((data, i) => (
+          <CarouselCard icon={data.icon} name={data.name} key={i} />
+        ))}
+      </Marquee>
+      <Marquee className="!flex md:!hidden" direction="right" pauseOnHover>
+        {carouselData.slice(4, 7).map((data, i) => (
+          <CarouselCard icon={data.icon} name={data.name} key={i} />
+        ))}
+      </Marquee>
+    </>
   );
 }

@@ -29,9 +29,9 @@ export default function FeedCarousel() {
       className="w-full max-w-full overflow-hidden"
     >
       <CarouselContent>
-        {feedHomeData.slice(0, 8).map((project) => (
+        {feedHomeData.slice(0, 8).map((project, index) => (
           <CarouselItem
-            key={project.id}
+            key={index}
             className="md:basis-1/2 lg:basis-1/3 2xl:basis-1/4"
           >
             <ProjectCard

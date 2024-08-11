@@ -99,7 +99,7 @@ export default function RootLayout({
                 </ul>
               </nav>
             </aside>
-            <div className="lg:ml-48 px-[15px] md:px-[30px] pt-[40px]">
+            <div className="lg:ml-48 px-[15px] md:px-[30px] w-full pt-[40px]">
               {children}
             </div>
           </div>

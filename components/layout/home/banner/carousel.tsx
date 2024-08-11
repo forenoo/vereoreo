@@ -27,9 +27,9 @@ export default function BannerCarousel() {
       className="w-full max-w-full overflow-hidden"
     >
       <CarouselContent>
-        {bannerHomeData.slice(0, 8).map((project) => (
+        {bannerHomeData.slice(0, 8).map((project, index) => (
           <CarouselItem
-            key={project.id}
+            key={index}
             className="md:basis-1/2 lg:basis-1/3 2xl:basis-1/4"
           >
             <ProjectCard

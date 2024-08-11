@@ -1,7 +1,5 @@
 import UpFade from "@/components/animation/upfade";
 import Divider from "@/components/ui/divider";
-import Image from "next/image";
-import { prisma } from "@/lib/prisma";
 import HomeHeader from "@/components/layout/home/header";
 import ProjectBanner from "@/components/layout/home/banner/project-banner";
 import ProjectFeed from "@/components/layout/home/feed/project-feed";

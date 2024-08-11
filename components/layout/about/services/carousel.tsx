@@ -45,7 +45,6 @@ export default function ServiceCarousel() {
         {carouselData.map((data, i) => (
           <CarouselCard icon={data.icon} name={data.name} key={i} />
         ))}
-        ``
       </Marquee>
       <Marquee className="!flex md:!hidden" direction="left" pauseOnHover>
         {carouselData.slice(0, 3).map((data, i) => (

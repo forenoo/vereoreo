@@ -3,13 +3,13 @@ import React from "react";
 export default function Description() {
   return (
     <section>
-      <p className="text-[16px] text-justify">
+      <p className="text-[14px] lg:text-[16px] text-justify">
         Hi! I am Gerrard Setiawan, a seasoned creative graphic designer with a
         deep passion for crafting visually compelling. With a strong foundation
         in design principles and a comprehensive understanding of various design
         tools and platforms, I have been navigating the ever-evolving landscape
-        of social media design with enthusiasm and dedication. Currently, I
-        reside in Cianjur, Indonesia 🇮🇩. <br />
+        of social media design with enthusiasm and dedication. Currently, I live
+        in Cianjur, Indonesia 🇮🇩. <br />
         <br />
         As a detail-oriented and creative thinker, I thrive in dynamic
         environments where innovation is the driving force. My strong

@@ -5,6 +5,8 @@ import Services from "@/components/layout/about/services/services";
 import Divider from "@/components/ui/divider";
 import Footer from "@/components/layout/footer";
 import React from "react";
+import DesignApproachDescription from "@/components/layout/about/design-approach/description";
+import DesignApproachHeader from "@/components/layout/about/design-approach/header";
 
 export default function AboutPage() {
   return (
@@ -15,6 +17,9 @@ export default function AboutPage() {
       </UpFade>
       <UpFade delay={0.2} className="gap-y-[25px] grid">
         <Description />
+        <Divider />
+        <DesignApproachHeader />
+        <DesignApproachDescription />
         <Divider />
         <Services />
         <Divider />

@@ -9,7 +9,7 @@ interface CarouselCardProps {
 export default function CarouselCard(props: CarouselCardProps) {
   const { icon, name } = props;
   return (
-    <div className="lg:p-[20px] p-[15px] flex mr-[15px] gap-[10px] items-center rounded-[10px] border border-primary/20 bg-gradient-to-b from-[#1E2021] to-[#131516]">
+    <div className="mr-[15px] flex items-center gap-[10px] rounded-[10px] border border-primary/20 bg-gradient-to-b from-[#1E2021] to-[#131516] p-[15px] lg:p-[20px]">
       {icon}
       <span className="text-[14px] lg:text-[16px]">{name}</span>
     </div>

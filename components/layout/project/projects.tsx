@@ -9,7 +9,7 @@ export default async function Projects() {
   });
 
   return (
-    <section className="max-w-full mx-auto columns-1 space-y-6 sm:block sm:columns-2 sm:gap-6 lg:columns-3 xl:columns-4">
+    <section className="mx-auto max-w-full columns-1 space-y-6 sm:block sm:columns-2 sm:gap-6 lg:columns-3 xl:columns-4">
       {projectData.map((project, index) => (
         <ProjectCard
           key={index}

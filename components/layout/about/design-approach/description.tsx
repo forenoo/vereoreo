@@ -1,7 +1,7 @@
 export default function DesignApproachDescription() {
   return (
     <section>
-      <p className="text-[14px] lg:text-[16px] text-justify">
+      <p className="text-justify text-[14px] lg:text-[16px]">
         My design approach centers on the idea that every piece of visual
         content should not only capture attention but also communicate a clear
         and impactful message. Specializing in graphic design for social media

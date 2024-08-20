@@ -3,7 +3,7 @@ import React from "react";
 export default function Description() {
   return (
     <section>
-      <p className="text-[14px] lg:text-[16px] text-justify">
+      <p className="text-justify text-[14px] lg:text-[16px]">
         Hi! I am Gerrard Setiawan, a seasoned creative graphic designer with a
         deep passion for crafting visually compelling. With a strong foundation
         in design principles and a comprehensive understanding of various design

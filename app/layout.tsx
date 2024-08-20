@@ -25,18 +25,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={cn(manrope.className, "bg-background")}>
         <NextTopLoader color="#dedede" />
         <SmoothScroll>
           <div className="flex min-h-screen w-full">
-            <aside className="fixed inset-y-0 left-0 z-10 hidden py-[40px] border-border/30 flex-col w-48 border-r lg:flex">
+            <aside className="fixed inset-y-0 left-0 z-10 hidden w-48 flex-col border-r border-primary/40 py-[40px] lg:flex">
               <nav className="overflow-auto">
-                <ul className="grid gap-y-[20px] pl-[30px] pt-0 pb-[40px] text-[20px] font-medium">
+                <ul className="grid gap-y-[20px] pb-[40px] pl-[30px] pt-0 text-[20px] font-medium">
                   <li>
                     <Link href={"/"}>
                       <Image
@@ -52,7 +52,7 @@ export default function RootLayout({
                       <li key={index}>
                         <Link
                           href={item.href}
-                          className="hover:text-muted transition-all"
+                          className="transition-all hover:text-primary/60"
                         >
                           {item.name}
                         </Link>
@@ -62,7 +62,7 @@ export default function RootLayout({
                 </ul>
                 <Divider />
                 <ul className="grid gap-y-[12px] py-[32px] pl-[30px]">
-                  <li className="text-muted text-[12px] font-inter uppercase tracking-[2px]">
+                  <li className="font-inter text-[12px] uppercase tracking-[2px] text-primary/60">
                     commision
                   </li>
                   <div className="grid gap-[6px]">
@@ -70,7 +70,7 @@ export default function RootLayout({
                       <li key={index}>
                         <Link
                           href={item.href}
-                          className="hover:text-muted transition-all text-[14px]"
+                          className="text-[14px] transition-all hover:text-primary/60"
                         >
                           {item.name}
                         </Link>
@@ -80,7 +80,7 @@ export default function RootLayout({
                 </ul>
                 <Divider />
                 <ul className="grid gap-y-[12px] py-[32px] pl-[30px]">
-                  <li className="text-muted text-[12px] font-inter uppercase tracking-[2px]">
+                  <li className="font-inter text-[12px] uppercase tracking-[2px] text-primary/60">
                     contact me
                   </li>
                   <div className="grid gap-[6px]">
@@ -89,7 +89,7 @@ export default function RootLayout({
                         <Link
                           href={item.href}
                           target="_blank"
-                          className="hover:text-muted transition-all text-[14px]"
+                          className="text-[14px] transition-all hover:text-primary/60"
                         >
                           {item.name}
                         </Link>
@@ -99,7 +99,7 @@ export default function RootLayout({
                 </ul>
               </nav>
             </aside>
-            <div className="lg:ml-48 px-[15px] md:px-[30px] w-full pt-[40px]">
+            <div className="w-full px-[15px] pt-[40px] md:px-[30px] lg:ml-48">
               {children}
             </div>
           </div>

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="grid gap-y-[25px]">
       <HomeHeader />
-      <UpFade className="gap-y-[25px] grid" delay={0.15}>
+      <UpFade className="grid gap-y-[25px]" delay={0.15}>
         <Divider />
         <ProjectBanner />
         <Divider />

@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Divider() {
-  return <div className="bg-primary/30 w-full h-[1px]"></div>;
+  return <div className="h-[1px] w-full bg-primary/40"></div>;
 }

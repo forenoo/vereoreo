@@ -4,15 +4,15 @@ import React from "react";
 
 export default function DesignApproachHeader() {
   return (
-    <section className="gap-y-[25px] grid">
+    <section className="grid gap-y-[25px]">
       <header className="grid gap-y-[5px]">
-        <div className="flex gap-[10px] items-center">
+        <div className="flex items-center gap-[10px]">
           <MdOutlineDraw size={30} />
-          <p className="capitalize text-[18px] md:text-[20px] font-semibold">
+          <p className="text-[18px] font-semibold capitalize md:text-[20px]">
             design approach
           </p>
         </div>
-        <p className="text-[14px] md:text-[16px] text-muted font-medium">
+        <p className="text-[14px] font-medium text-primary/60 md:text-[16px]">
           The design approach I took in the design process
         </p>
       </header>

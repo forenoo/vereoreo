@@ -5,12 +5,12 @@ export default function AboutHeader() {
   return (
     <header className="grid gap-y-[10px] lg:gap-y-[20px]">
       <UpFade>
-        <h1 className="text-[22px] lg:text-[42px] flex font-semibold leading-snug">
+        <h1 className="flex text-[22px] font-semibold leading-snug lg:text-[42px]">
           About
         </h1>
       </UpFade>
       <UpFade delay={0.1}>
-        <span className="text-muted/70 font-medium text-[14px] lg:text-[20px]">
+        <span className="text-[14px] font-medium text-primary/60 lg:text-[20px]">
           A short story of me
         </span>
       </UpFade>

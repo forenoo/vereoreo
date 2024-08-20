@@ -39,7 +39,7 @@ export const bannerHomeData = [
     title: "Pasargaming",
     createdAt: "2024",
   },
-];
+] as const;
 
 export const posterHomeData = [
   {

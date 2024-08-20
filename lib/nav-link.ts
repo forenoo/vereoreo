@@ -11,7 +11,7 @@ export const defaultSidebar = [
     name: "Project",
     href: "/project",
   },
-];
+] as const;
 
 export const commisionSidebar = [
   {
@@ -22,7 +22,7 @@ export const commisionSidebar = [
     name: "Price List",
     href: "/price-list",
   },
-];
+] as const;
 
 export const contactSidebar = [
   {
@@ -41,4 +41,4 @@ export const contactSidebar = [
     name: "Mail",
     href: "mailto:vereoreo@gmail.com",
   },
-];
+] as const;

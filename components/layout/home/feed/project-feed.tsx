@@ -5,7 +5,7 @@ export default function ProjectFeed() {
   return (
     <section className="grid gap-[10px] md:gap-[20px]">
       <header className="flex justify-between">
-        <p className="uppercase tracking-[1.8px] font-inter text-muted text-[12px]">
+        <p className="font-inter text-[12px] uppercase tracking-[1.8px] text-primary/60">
           feed design
         </p>
       </header>

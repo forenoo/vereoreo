@@ -15,7 +15,7 @@ export default function AboutPage() {
       <UpFade delay={0.1}>
         <Divider />
       </UpFade>
-      <UpFade delay={0.2} className="gap-y-[25px] grid">
+      <UpFade delay={0.2} className="grid gap-y-[25px]">
         <Description />
         <Divider />
         <DesignApproachHeader />

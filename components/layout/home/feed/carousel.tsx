@@ -8,7 +8,6 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import ProjectCard from "@/components/ui/project-card";
-import { formatDateToYear } from "@/lib/utils";
 import { Project } from "@/common/types/project";
 import { feedHomeData } from "@/lib/projectHomeData";
 

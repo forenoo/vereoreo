@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import ProjectCard from "@/components/ui/project-card";
 import { Project } from "@/common/types/project";
-import { feedHomeData } from "@/lib/projectHomeData";
+import { feedData } from "@/lib/projectData";
 
 export default function FeedCarousel() {
   return (
@@ -28,7 +28,7 @@ export default function FeedCarousel() {
       className="w-full max-w-full overflow-hidden"
     >
       <CarouselContent>
-        {feedHomeData.slice(0, 8).map((project, index) => (
+        {feedData.map((project, index) => (
           <CarouselItem
             key={index}
             className="md:basis-1/2 lg:basis-1/3 2xl:basis-1/4"

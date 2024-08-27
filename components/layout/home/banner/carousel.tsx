@@ -8,7 +8,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import ProjectCard from "@/components/ui/project-card";
-import { bannerHomeData } from "@/lib/projectHomeData";
+import { bannerData } from "@/lib/projectData";
 
 export default function BannerCarousel() {
   return (
@@ -27,7 +27,7 @@ export default function BannerCarousel() {
       className="w-full max-w-full overflow-hidden"
     >
       <CarouselContent>
-        {bannerHomeData.slice(0, 8).map((project, index) => (
+        {bannerData.slice(0, 8).map((project, index) => (
           <CarouselItem
             key={index}
             className="md:basis-1/2 lg:basis-1/3 2xl:basis-1/4"

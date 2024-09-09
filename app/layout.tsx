@@ -4,7 +4,6 @@ import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 
 const manrope = Manrope({ subsets: ["latin"] });
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 import SmoothScroll from "@/components/layout/smooth-scroll";
 
